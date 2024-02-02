@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Drink Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Drink Calculator</h1>
+    <label for="drinkType">Select Drink:</label>
+    <select id="drinkType" onchange="updateIngredients()">
+      <option value="lemonade">Lemonade</option>
+      <option value="blueberry">Blueberry</option>
+    </select>
+    <label for="targetLiters">Target Liters:</label>
+    <input type="number" id="targetLiters" placeholder="Enter target liters" onkeydown="handleEnterKey(event)" />
+    <button onclick="calculate()">Calculate</button>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
