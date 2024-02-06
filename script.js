@@ -2,7 +2,7 @@ function calculateIngredients(targetLiters, drinkType) {
   let lemonadeRatio, sugarRatio, limantosRatio;
 
   if (drinkType === 'lemonade') {
-    lemonadeRatio = 20
+    lemonadeRatio = 25
     sugarRatio = 1;
     limantosRatio = 30;
   } else if (drinkType === 'blueberry') {
